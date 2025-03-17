@@ -22,18 +22,18 @@
     <meta name="description" content="最近因为有R和python一起开发的需求，于是打算从RStudio换到VSCode，查了些教程多少都有些过时了，折腾了一下也踩了点坑，以此来记录一下。 1.下载R和VSCode这里就不在赘述了，直接去R和VSCode官网下载即可。 2.下载VSCode插件shift+command+X打开插件商店搜索R，下载以下两个： 至此，就已经可以使用了，想要更好的体验还可以配合radian和httpgd。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在VSCode中使用R">
-<meta property="og:url" content="http://example.com/2025/03/17/%E5%9C%A8VSCode%E4%B8%AD%E4%BD%BF%E7%94%A8R/index.html">
+<meta property="og:url" content="http://kidmusic.github.io/2025/03/17/%E5%9C%A8VSCode%E4%B8%AD%E4%BD%BF%E7%94%A8R/index.html">
 <meta property="og:site_name" content="HotCat">
 <meta property="og:description" content="最近因为有R和python一起开发的需求，于是打算从RStudio换到VSCode，查了些教程多少都有些过时了，折腾了一下也踩了点坑，以此来记录一下。 1.下载R和VSCode这里就不在赘述了，直接去R和VSCode官网下载即可。 2.下载VSCode插件shift+command+X打开插件商店搜索R，下载以下两个： 至此，就已经可以使用了，想要更好的体验还可以配合radian和httpgd。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/.com//R.png">
-<meta property="og:image" content="http://example.com/.com//radian.jpg">
-<meta property="og:image" content="http://example.com/.com//settings.png">
+<meta property="og:image" content="http://kidmusic.github.io/.io//R.png">
+<meta property="og:image" content="http://kidmusic.github.io/.io//radian.jpg">
+<meta property="og:image" content="http://kidmusic.github.io/.io//settings.png">
 <meta property="article:published_time" content="2025-03-17T07:22:21.196Z">
 <meta property="article:modified_time" content="2025-03-17T08:01:45.247Z">
 <meta property="article:author" content="HotCat">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/.com//R.png">
+<meta name="twitter:image" content="http://kidmusic.github.io/.io//R.png">
   
   
   
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"kidmusic.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -281,13 +281,13 @@
                 
                 <p>最近因为有R和python一起开发的需求，于是打算从RStudio换到VSCode，查了些教程多少都有些过时了，折腾了一下也踩了点坑，以此来记录一下。</p>
 <h2 id="1-下载R和VSCode"><a href="#1-下载R和VSCode" class="headerlink" title="1.下载R和VSCode"></a>1.下载R和VSCode</h2><p>这里就不在赘述了，直接去R和VSCode官网下载即可。</p>
-<h2 id="2-下载VSCode插件"><a href="#2-下载VSCode插件" class="headerlink" title="2.下载VSCode插件"></a>2.下载VSCode插件</h2><p>shift+command+X打开插件商店搜索R，下载以下两个：<br><img src="/.com//R.png" srcset="/img/loading.gif" lazyload alt="R插件"></p>
+<h2 id="2-下载VSCode插件"><a href="#2-下载VSCode插件" class="headerlink" title="2.下载VSCode插件"></a>2.下载VSCode插件</h2><p>shift+command+X打开插件商店搜索R，下载以下两个：<br><img src="/.io//R.png" srcset="/img/loading.gif" lazyload alt="R插件"></p>
 <p>至此，就已经可以使用了，想要更好的体验还可以配合radian和httpgd。</p>
 <h2 id="3-（可选）radian和httpgd"><a href="#3-（可选）radian和httpgd" class="headerlink" title="3.（可选）radian和httpgd"></a>3.（可选）radian和httpgd</h2><blockquote>
 <p>！需要安装python</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pip install radian<br></code></pre></td></tr></table></figure>
-<p>查看是否安装成功<br><img src="/.com//radian.jpg" srcset="/img/loading.gif" lazyload alt="radian"><br>接下来，打开VSCode的设置json文件，在其中添加如下内容：（注意，如果没有使用其他的终端则不必添加最后一块儿内容，我是因为使用了zsh，且如果在winows下记得修改osx）<br><img src="/.com//settings.png" srcset="/img/loading.gif" lazyload alt="settings"><br>其中，两处地址分别指向radian和R的路径，如果不清楚可以使用</p>
+<p>查看是否安装成功<br><img src="/.io//radian.jpg" srcset="/img/loading.gif" lazyload alt="radian"><br>接下来，打开VSCode的设置json文件，在其中添加如下内容：（注意，如果没有使用其他的终端则不必添加最后一块儿内容，我是因为使用了zsh，且如果在winows下记得修改osx）<br><img src="/.io//settings.png" srcset="/img/loading.gif" lazyload alt="settings"><br>其中，两处地址分别指向radian和R的路径，如果不清楚可以使用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">where</span> radian<br></code></pre></td></tr></table></figure>
 <p>查看radian路径，在R的终端中使用</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs R"><span class="hljs-operator">&gt;</span> R.home<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
@@ -314,7 +314,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>在VSCode中使用R</div>
-      <div>http://example.com/2025/03/17/在VSCode中使用R/</div>
+      <div>http://kidmusic.github.io/2025/03/17/在VSCode中使用R/</div>
     </div>
     <div class="license-meta">
       
